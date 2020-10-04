@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Peddana&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <title>WeatherOpedia &mdash;Weather info in a click</title>
+    </head>
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+
+            <div class="location">
+                Srinagar
+            </div>
+        
+            <div class="time">
+                09:45
+            </div>
+           
+        </header>
+        
+        <section class="weather__info">
+        
+            <div class="weather__info-img">
+                <img src="img/icon-sunny.png" alt="sunshine" width="200rem" height="200rem" class="weather__info-icon">
+
+            </div>
+        
+            <div class="weather__info-description">
+                Sunny
+            </div>
+        
+        </section>
+        
+        <section class="main">
+
+            <div class="temperature">
+                <span class="temp">30.0&deg; C</span>
+
+                <!--<button class="temperature__refresher">
+                   <img src="img/refresh-button.png" alt="refresh weather" width="20rem" height="20rem">
+                </button>-->
+
+            </div>
+
+            <div class="humidity">
+
+            <span>Humidity: 41</span>
+
+            
+            </div>
+            <!--
+            <div class="main__max-min">
+                24 &deg;/12 &deg;
+            </div>
+        -->
+
+            <div class="conversion">
+                <Button class="button">
+                    Convert to Fahrenheit
+                </Button>
+            </div>
+        
+        </section>
+
+        <footer class="footer">
+
+            <div class="footer__search">
+
+                <form class="footer__search-1">
+
+                    <input type="search" class="search"  placeholder="Enter the location">
+
+                    <button class="search__icon">
+    
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z"/></svg>
+                    </button>
+
+
+
+                </form>
+                
+                <div class="footer__search-2">
+
+                    <button class="footer__search-geolocation">
+                        Use your current location
+                    </button>
+
+                </div>
+               
+            
+            </div>
+
+            <div class="footer__copyright">
+                <span>&copy; Created by <a href="https://syedsahil.github.io/">Syed Sahil</a> with <img src="./img/icons8-heart-200.png" alt="heart"></span>
+            </div>
+
+            <div class="footer__poweredby">
+                Powered by <a href="http://www.weatherstack.com">WeatherStack</a>
+            </div>
+          
+
+        </footer>
+
+
+    </div>
+
+    <div class="loader">
+        <img src="./img/loading.png" alt="loader" class="loader__img">
+    </div>
+
+
+
+<script src="index.js"></script>
+</body>
+
+</html>
